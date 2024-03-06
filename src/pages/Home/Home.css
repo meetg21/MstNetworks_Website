@@ -1,0 +1,129 @@
+.app__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background-image: linear-gradient(to right, rgb(15, 15, 15), rgb(59, 11, 65));
+}
+
+.app__wrapper_info{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.app__wrapper_img {
+    width: 50%;
+    padding: 0 20px;
+}
+
+img{
+    width: 70%;
+    height: 70%;
+    margin-left: 10%;
+}
+
+.app__header_h1 {
+    font-family: 'Cormorant Upright', serif;
+    color: white;
+    letter-spacing: 0.04em;
+    line-height: 60px;
+    font-size: 60px;
+}
+
+p{
+    font-family: 'Cormorant Upright', serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.section_padding {
+    padding-top: 0px;
+    padding-left: 80px;
+    padding-bottom: 64px;
+    padding-right: 80px;
+}
+
+.custom__button {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.custom__button:hover {
+    background-color: white;
+    color: purple;
+    
+}
+@media screen and (min-width: 2000px) {
+
+    .custom__button{
+        font-size: 37px;
+        line-height: 67px;
+    }
+
+    .p__poppins {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .headtext__cormorant {
+        font-size: 150px;
+        line-height: 210px;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+    .app__wrapper {
+        flex-direction: column;
+    }
+
+    .app__wrapper_img {
+        margin: 5rem 0 0 0;
+    }
+
+    .app__wrapper_img img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .section__padding {
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .section__padding {
+        padding: 4rem 2rem;
+    }
+    .app__header_h1{
+        font-size:18px;
+    }
+    .p__poppins {
+        font-size: 20px;
+    }
+    .app__header_h1{
+        font-size:26px;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+    .p__poppins {
+        font-size: 12px;
+    }
+    .app__header_h1{
+        font-size:16px;
+    }
+}
