@@ -12,10 +12,11 @@
 
 body {
   margin: 0px;
+  overflow-x: hidden;
 }
 
 .app__navbar {
-  width: 96%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
