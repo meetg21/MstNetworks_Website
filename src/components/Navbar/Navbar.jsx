@@ -21,7 +21,7 @@ const Navbar = () => {
           <a href="./about">About</a>
         </li>
         <li className="p__opensans">
-          <a href="./service">Service</a>
+          <a href="#service">Service</a>
         </li>
         <li className="p__opensans">
           <a href="./faqs">FAQs</a>

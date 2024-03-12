@@ -1,4 +1,4 @@
-.app__header {
+/* .app__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,5 +125,95 @@ p{
     }
     .app__header_h1{
         font-size:16px;
+    }
+} */
+
+.app__header {
+    display: flex;
+    flex-direction: column;
+    /* Align items vertically on smaller screens */
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(15, 15, 15), rgb(59, 11, 65));
+    padding: 2rem 20px;
+}
+
+.app__wrapper_info {
+    width: 80%;
+    /* Occupy full width on smaller screens */
+    text-align: center;
+    /* Align text to the center on smaller screens */
+    padding: 0 20px;
+    /* Adjust padding for spacing */
+}
+
+.app__wrapper_img {
+    width: 100%;
+    /* Occupy full width on smaller screens */
+    text-align: center;
+    /* Align image to the center on smaller screens */
+    padding: 0 20px;
+    /* Adjust padding for spacing */
+}
+
+img {
+    max-width: 65%;
+    margin-left: -15%;
+    /* Ensure image fits within container */
+    height: auto;
+}
+
+.app__header_h1 {
+    font-family: 'Cormorant Upright', serif;
+    color: white;
+    letter-spacing: 0.04em;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'Cormorant Upright', serif;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.custom__button {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.custom__button:hover {
+    background-color: white;
+    color: purple;
+}
+
+@media screen and (min-width: 651px) {
+    .app__header {
+        flex-direction: row;
+        /* Align items horizontally on larger screens */
+    }
+
+    .app__wrapper_info {
+        width: 50%;
+        text-align: left;
+        /* Align text to the left on larger screens */
+    }
+
+    .app__wrapper_img {
+        width: 50%;
+        text-align: right;
+        /* Align image to the right on larger screens */
     }
 }
