@@ -100,7 +100,7 @@ const Service = () => {
     <div className="service-page" id='service'>
       {/* Heading Content */}
       <div className="heading-content">
-        <h1>What we offer</h1>
+        <h1>We offer Proffesional Cyber Security services</h1>
         <p className='ser-para' style={{ color: 'grey' }}>Lorem ipsum dolor sit amet consectetuer adipiscing elitenean commodo ligula eget dolorenean massa.</p>
       </div>
 

@@ -36,6 +36,7 @@
 import homeimg from '../../assets/home-img.png';
 import './Home.css';
 import Service from "../Service/Service";
+import RedService from '../Red Service/redservice';
 
 const Home = () => (
   <div>
@@ -52,6 +53,7 @@ const Home = () => (
     </div>
   </div>
   <Service></Service>
+  <RedService></RedService>
   </div>
 );
 
