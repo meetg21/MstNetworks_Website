@@ -17,8 +17,8 @@ const Service = () => {
 
   return (
     <div>
-      
-      <div className="service-page">
+      {/* <Navbar></Navbar> */}
+      <div id='services'className="service-page">
         {/* Heading Content */}
         <div className="heading-content">
           <h1>What we offer</h1>

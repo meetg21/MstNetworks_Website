@@ -6,19 +6,19 @@ import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import {send} from "emailjs-com";
+import { send } from "emailjs-com";
+import Navbar from "../../components/Navbar/Navbar";
 
 const ContactUs = () => {
-
   const initialFormState = {
     from_name: "",
-    number:"",
+    number: "",
     message: "",
     reply_to: "",
   };
 
   const [toSend, setToSend] = useState(initialFormState);
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
   const onSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -40,7 +40,9 @@ const ContactUs = () => {
 
   return (
     <div>
-      <CssBaseline />
+      <Navbar></Navbar>
+      {/* <CssBaseline /> */}
+
       <div className="mainhead">
         <Container maxWidth="sm">
           <Box className="contactus-container">
@@ -145,7 +147,7 @@ const ContactUs = () => {
                 size="small"
                 style={{ display: "block", margin: "0 auto" }}
               >
-                 {loading ? "Sending..." : "Submit"}
+                {loading ? "Sending..." : "Submit"}
               </Button>
             </form>
           </Box>

@@ -5,7 +5,7 @@ import Service from "../Service/Service";
 
 const Home = () => (
   <div>
-    {/* <Navbar></Navbar> */}
+    <Navbar></Navbar>
     <div className="app__header app__wrapper section_padding" id="home">
       <div className="app__wrapper_info">
         <p className="p__poppins" style={{ margin: "2rem 0", color: "white" }}>

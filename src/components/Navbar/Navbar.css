@@ -13,6 +13,7 @@
 body {
   margin: 0px;
   overflow-x: hidden;
+  /* position:fixed; */
 }
 
 .app__navbar {
@@ -51,7 +52,6 @@ body {
 .app__navbar-links li {
   margin: 0 1rem;
   cursor: pointer;
-  /* color: var(--color-white); */
 }
 
 .app__navbar-links li:hover {
@@ -95,6 +95,11 @@ body {
 
   flex-direction: column;
   z-index: 5;
+}
+.app__navbar-logo img {
+  height: 55px;
+  width: 40px;
+  margin-left: 10px;
 }
 
 .app__navbar-smallscreen_overlay .overlay__close {

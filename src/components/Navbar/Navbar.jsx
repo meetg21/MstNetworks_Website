@@ -3,15 +3,15 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import "./Navbar.css";
 import logomst from "../../assets/logomst.png";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
+        <img src={logomst} alt="Logo" />
         <h4 style={{ color: "white" }}>MST Networks</h4>
-        {/* <img src={logomst} alt="header img" /> */}
-        {/* add image tag here */}
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
@@ -21,7 +21,7 @@ const Navbar = () => {
           <a href="./about">About</a>
         </li>
         <li className="p__opensans">
-          <a href="./service">Service</a>
+          <Link to="services" ><a>Service</a></Link>
         </li>
         <li className="p__opensans">
           <a href="./faqs">FAQs</a>
