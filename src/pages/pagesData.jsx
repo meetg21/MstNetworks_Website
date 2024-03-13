@@ -1,6 +1,7 @@
 import ContactUs from "./Contactus/ContactUs";
 import Home from "./Home/Home";
 import Service from "./Service/Service";
+import RedTeamServices from "./RedTeamServices/RedTeamServices";
 
 const pagesData=[
     {
@@ -17,6 +18,12 @@ const pagesData=[
         path: "/ContactUs",
         element: <ContactUs/>,
         title: "ContactUs"
+    },
+
+    {
+        path: "/RedTeamServices",
+        element: <RedTeamServices/>,
+        title: "RedTeamServices"
     },
 
 ];

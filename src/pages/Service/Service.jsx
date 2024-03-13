@@ -17,8 +17,8 @@ const Service = () => {
 
   return (
     <div>
-      {/* <Navbar></Navbar> */}
-      <div id='services'className="service-page">
+      <Navbar></Navbar>
+      <div className="service-page">
         {/* Heading Content */}
         <div className="heading-content">
           <h1>What we offer</h1>
@@ -35,16 +35,6 @@ const Service = () => {
             <img className="img-ser" src={ser1} alt="Service 1 Logo" />
             <h3>Threat Intelligence</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <button onClick={handleLearnMoreClick} className="custom__button">
-              {showDetails ? "Show Less" : "Learn More"}
-            </button>
-            {showDetails && (
-              <div className="details">
-                <h4>Heading 1</h4>
-                <h4>Heading 2</h4>
-                <h4>Heading 3</h4>
-              </div>
-            )}
           </div>
 
           <div className="card">
