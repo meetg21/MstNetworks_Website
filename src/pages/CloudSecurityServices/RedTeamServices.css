@@ -48,7 +48,7 @@ body {
 }
 
 .card-red {
-  width: calc((90% / 3) - 10px);
+  width: calc((100% / 3) - 10px);
   height: auto;
   margin-bottom: 20px;
   background-color: rgb(29, 27, 27);
@@ -57,6 +57,16 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   box-sizing: border-box;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card-red.card-appear {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .card-red img {
