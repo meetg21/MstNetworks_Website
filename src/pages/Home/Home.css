@@ -1,69 +1,115 @@
 .app__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   background-image: linear-gradient(to right, rgb(15, 15, 15), rgb(59, 11, 65));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(15, 15, 15), rgb(59, 11, 65));
 }
 
-.app__wrapper_info{
-    width: 50%;
-    padding: 0 20px;
+.app__wrapper_info {
+  width: 50%;
+  padding: 0 20px;
 }
 
 .app__wrapper_img {
-    width: 50%;
-    padding: 0 20px;
+  width: 50%;
+  padding: 0 20px;
 }
 
-img{
-    width: 70%;
-    height: 70%;
-    margin-left: 10%;
+img {
+  width: 70%;
+  height: 70%;
+  margin-left: 10%;
 }
 
 .app__header_h1 {
-    font-family: 'Cormorant Upright', serif;
-    color: white;
-    letter-spacing: 0.04em;
-    line-height: 60px;
-    font-size: 60px;
+  font-family: "Cormorant Upright", serif;
+  color: white;
+  letter-spacing: 0.04em;
+  line-height: 60px;
+  font-size: 60px;
 }
 
-p{
-    font-family: 'Cormorant Upright', serif;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
+p {
+  font-family: "Cormorant Upright", serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .section_padding {
-    padding-top: 0px;
-    padding-left: 80px;
-    padding-bottom: 64px;
-    padding-right: 80px;
+  padding-top: 0px;
+  padding-left: 80px;
+  padding-bottom: 64px;
+  padding-right: 80px;
 }
 
 .custom__button {
-    background-color: purple;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 8px;
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 .custom__button:hover {
-    background-color: white;
-    color: purple;
-    
+  background-color: white;
+  color: purple;
 }
-@media screen and (min-width: 2000px) {
+
+.footer {
+  background-color: purple;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.heart-icon {
+  color: #f00;
+  margin: 0 0.2rem;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+/* @media screen and (min-width: 2000px) {
 
     .custom__button{
         font-size: 37px;
@@ -126,4 +172,4 @@ p{
     .app__header_h1{
         font-size:16px;
     }
-}
+} */

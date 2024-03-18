@@ -129,19 +129,19 @@ const Service = () => {
       </div>
 
       <div className="card-container">
-        <div className="card">
+        <div className="card" onClick={() => window.location.href = "/RedTeamServices"}>
           <img className='img-ser' src={ser1} alt="Service 2 Logo" />
           <h3>Red Team Service</h3>
           <p>Empower your cybersecurity defenses with our dynamic Red Team service. Our expert team conducts sophisticated simulations to uncover vulnerabilities, providing actionable insights to fortify your security posture.</p>
         </div>
 
-        <div className="card">
+        <div className="card" onClick={() => window.location.href = "/CloudSecurityServices"}>
           <img className='img-ser' src={ser6} alt="Service 2 Logo" />
           <h3>Cloud Security</h3>
           <p>Elevate your cloud security with our comprehensive solutions. We assess, fortify, and monitor your cloud infrastructure, ensuring robust protection against evolving threats</p>
         </div>
 
-        <div className="card">
+        <div className="card" onClick={() => window.location.href = "/PaymentAppServices"}>
           <img className='img-ser' src={ser3} alt="Service 1 Logo" />
           <h3>Wireless Network Security</h3>
           <p>Transform your wireless security with our specialized solutions. We analyze, fortify, and monitor your wireless networks, ensuring impenetrable defenses against modern cyber threats</p>
@@ -154,7 +154,7 @@ const Service = () => {
           <p> Revolutionize your development with our DevSecOps mastery. Seamlessly embed security into your workflows, automating defenses for uninterrupted protection against evolving threats.</p>
         </div>
 
-        <div className="card">
+        <div className="card" onClick={() => window.location.href = "/IotServices"}>
           <img className='img-ser' src={ser5} alt="Service 1 Logo" />
           <h3>IOT/OT SECURITY</h3>
           <p>Advance IoT/OT security with precision solutions fortified by industry-standard tools. We meticulously analyze, fortify, and monitor your devices, ensuring robust defense against cyber threats</p>

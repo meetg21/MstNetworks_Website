@@ -163,33 +163,33 @@
 // };
 
 // export default RedService;
-import React, { useEffect } from 'react';
-import './RedTeamServices.css';
-import ser3 from '../../assets/ser3.png';
-import ser4 from '../../assets/ser4.png';
-import ser5 from '../../assets/ser5.png';
-import infra from '../../assets/infra.jpg';
-import publicimg from '../../assets/publicimg.jpg';
-import redimg from '../../assets/redimg.jpg';
+import React, { useEffect } from "react";
+import "./RedTeamServices.css";
+import ser3 from "../../assets/ser3.png";
+import ser4 from "../../assets/ser4.png";
+import ser5 from "../../assets/ser5.png";
+import infra from "../../assets/infra.jpeg";
+import publicimg from "../../assets/publicimg.jpeg";
+import redimg from "../../assets/redimg.jpg";
 import Navbar from "../../components/Navbar/Navbar";
 
 const RedService = () => {
   useEffect(() => {
     const animateCardsOnScroll = () => {
-      const cards = document.querySelectorAll('.card-red');
-      cards.forEach(card => {
+      const cards = document.querySelectorAll(".card-red");
+      cards.forEach((card) => {
         const cardPosition = card.getBoundingClientRect().top;
         const screenPosition = window.innerHeight / 1.2;
         if (cardPosition < screenPosition) {
-          card.classList.add('card-appear');
+          card.classList.add("card-appear");
         } else {
-          card.classList.remove('card-appear'); // Remove animation class if card is not in view
+          card.classList.remove("card-appear"); // Remove animation class if card is not in view
         }
       });
     };
-    window.addEventListener('scroll', animateCardsOnScroll);
+    window.addEventListener("scroll", animateCardsOnScroll);
     animateCardsOnScroll(); // Initially trigger the animation for the cards in view
-    return () => window.removeEventListener('scroll', animateCardsOnScroll);
+    return () => window.removeEventListener("scroll", animateCardsOnScroll);
   }, []);
 
   return (

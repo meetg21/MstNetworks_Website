@@ -21,7 +21,7 @@ const Navbar = () => {
           <a href="./about">About</a>
         </li>
         <li className="p__opensans">
-          <a href="./service">Service</a>
+          <a href="./Service">Service</a>
         </li>
         <li className="p__opensans">
           <a href="./team">Team</a>
@@ -59,17 +59,17 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="./service" onClick={() => setToggleMenu(false)}>
+                <a href="" onClick={() => setToggleMenu(false)}>
                   Service
                 </a>
               </li>
-      
+
               <li>
                 <a href="./Team" onClick={() => setToggleMenu(false)}>
                   Team
                 </a>
               </li>
-        {/* contact us button */}
+              {/* contact us button */}
             </ul>
           </div>
         )}
