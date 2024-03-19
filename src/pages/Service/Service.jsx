@@ -125,7 +125,7 @@ const Service = () => {
       {/* Heading Content */}
       <div className="heading-content">
         <h1>What we offer</h1>
-        <p className='ser-para' style={{ color: 'grey' }}>Lorem ipsum dolor sit amet consectetuer adipiscing elitenean commodo ligula eget dolorenean massa.</p>
+        <p className='ser-para' style={{ color: 'grey' }}>MST Networks Managed Security Services plays a vital role in maintaining the security posture of enterprises, addressing their risk and compliance requirements on a daily basis. This service represents a deep commitment, integrating seamlessly with the security team for extended durations to ensure comprehensive protection.</p>
       </div>
 
       <div className="card-container">

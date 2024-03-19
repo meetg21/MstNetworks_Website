@@ -30,18 +30,19 @@ const Home = () => {
             Cyber security Solutions for
           </p>
           <h1 className="app__header_h1">
-            Organizations with Critical Infrastructure
+            Redifining Cybersecurity Excellence:Your trusted Partner.
           </h1>
           <p
             className="p__poppins"
             style={{ margin: "2rem 0", color: "white" }}
           >
-            Sit tellus lobortis sed senectus vivamus molestie. Condimentum
-            valupat morbi facilisis quam scelersique sapien.Et,penatibus akiquam
-            amet telius
+            Our comprehensive range of service offerings enables the identification,
+             protection, and management of security vulnerabilities within your
+              critical infrastructure, ensuring the safeguarding of your digital
+               assets and the attainment of your desired cybersecurity objectives.
           </p>
           <button type="button" className="custom__button">
-            Discover more
+            <a href="/about">Discover more</a>
           </button>
         </div>
         <div className="app__wrapper_img">

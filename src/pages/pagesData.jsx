@@ -5,6 +5,7 @@ import RedTeamServices from "./RedTeamServices/RedTeamServices";
 import CloudSecurityServices from "./CloudSecurityServices/CloudSecurityServices";
 import PaymentAppServices from "./PaymentAppServices/PaymentAppServices";
 import IotServices from "./IotServices/IotServices";
+import About from "./Aboutus/About";
 
 const pagesData = [
   {
@@ -45,5 +46,10 @@ const pagesData = [
     element: <IotServices />,
     title: "IotServices",
   },
+  {
+    path: "/about",
+    element: <About />,
+    title: "About",
+  }
 ];
 export default pagesData;

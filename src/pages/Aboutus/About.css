@@ -1,0 +1,60 @@
+/* About.css */
+
+/* Apply general styles to the entire page */
+body {
+  font-family: "Cormorant Upright", serif;
+  margin: 10;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-image: linear-gradient(to right, rgb(15, 15, 15), rgb(59, 11, 65));
+  color:gray;
+  flex: auto;
+  
+}
+
+.about-container {
+  overflow: hidden;
+  max-width: 100%; /* Set maximum width */
+  margin: 0 auto; /* Center the container */
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+/* Style for paragraphs */
+.about-container p {
+  padding: 10px; /* Add padding around the paragraphs */
+  margin: 10px 0; /* Add margin between paragraphs, and remove horizontal margin */
+  position: relative; /* Set position to relative */
+  max-width: 100%; /* Set maximum width to prevent overflow */
+}
+
+/* Style for the box */
+.about-container p::after {
+  content: ''; /* Add content to the pseudo-element */
+  position: absolute; /* Set position to absolute */
+  top: 0; /* Position at the top of the paragraph */
+  left: 0; /* Position at the left of the paragraph */
+  width: 100%; /* Set width to match the paragraph */
+  height: 100%; /* Set height to match the paragraph */
+  border: 1px solid transparent; /* Add transparent border initially */
+  border-radius: 5px; /* Add border radius */
+  background-color: rgba(128, 0, 128, 0); /* Transparent background color */
+  z-index: 5; /* Set z-index to move the box below the paragraph */
+  transition: all 0.3s ease; /* Add transition for smooth animation */
+  transform: scale(0);
+}
+
+/* Add hover effect for paragraphs */
+.about-container p:hover::after {
+  border-color: purple; /* Change border color on hover */
+  background-color: rgba(128, 0, 128, 0.1); /* Semi-transparent background color */
+  z-index: 4; /* Set z-index to move the box above the paragraph */
+  transform: scale(1.01);
+}
+
+.about-container p:hover {
+  color: white; /* Change text color to white on hover */
+  transform: scale(1.01); 
+}
