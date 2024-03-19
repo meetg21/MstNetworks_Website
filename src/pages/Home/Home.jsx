@@ -22,13 +22,13 @@ const Home = () => {
       <Navbar></Navbar>
       <div className="app__header app__wrapper section_padding" id="home">
         <div className="app__wrapper_info">
-          <p
+          {/* <p
             className="p__poppins"
             style={{ margin: "2rem 0", color: "white" }}
           >
             {" "}
             Cyber security Solutions for
-          </p>
+          </p> */}
           <h1 className="app__header_h1">
             Redifining Cybersecurity Excellence:Your trusted Partner.
           </h1>
