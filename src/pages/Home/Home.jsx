@@ -41,9 +41,11 @@ const Home = () => {
               critical infrastructure, ensuring the safeguarding of your digital
                assets and the attainment of your desired cybersecurity objectives.
           </p>
+          <a href="/about">
           <button type="button" className="custom__button">
-            <a href="/about">Discover more</a>
+            Discover more
           </button>
+          </a>
         </div>
         <div className="app__wrapper_img">
           <img src={homeimg} alt="header img" />
@@ -65,7 +67,7 @@ const Home = () => {
             <a href="/team">Team</a>
           </li>
           <li>
-            <a href="/about-us">About us</a>
+            <a href="/about">About us</a>
           </li>
           <li>
             <a href="/contact-us">Contact us</a>
