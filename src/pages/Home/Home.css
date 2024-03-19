@@ -64,7 +64,7 @@ p {
 }
 
 .footer {
-  background-color: purple;
+  background-image: linear-gradient(to right, rgb(15, 15, 15), rgb(59, 11, 65));
   color: #fff;
   padding: 2rem 0;
 }
