@@ -1,6 +1,7 @@
 import homeimg from "../../assets/home-img.png";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import ser1 from "../../assets/ser1.png";
 import ser2 from "../../assets/ser2.png";
 import ser3 from "../../assets/ser3.png";
@@ -75,7 +76,7 @@ const Home = () => {
         </ul>
       </div>
     </footer>
-
+    {/* <Footer /> */}
     </div>
   );
 };
