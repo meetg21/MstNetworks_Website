@@ -94,7 +94,12 @@ button {
     height: auto;
     margin-bottom: 20px;
 }
+.ser-para{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: grey;
 
+}
 .card-container {
     display: flex;
     flex-wrap: wrap;

@@ -9,7 +9,7 @@ import ser4 from "../../assets/ser4.png";
 import ser5 from "../../assets/ser5.png";
 import ser6 from "../../assets/ser6.png";
 import React, { useState } from "react";
-import Service from "../Service/Service";
+import Service from "../../components/ServiceCom/ServiceCom";
 
 const Home = () => {
   const [showDetails, setShowDetails] = useState(false);
