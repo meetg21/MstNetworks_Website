@@ -8,8 +8,14 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { send } from "emailjs-com";
 import Navbar from "../../components/Navbar/Navbar";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactUs = () => {
+  const onChange = (value) => {
+    console.log('Captcha value:', value);
+    setIsCaptchaVerified(true);
+  };
+
   const initialFormState = {
     from_name: "",
     number: "",
@@ -19,6 +25,7 @@ const ContactUs = () => {
 
   const [toSend, setToSend] = useState(initialFormState);
   const [loading, setLoading] = useState(false);
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
   const onSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -140,15 +147,25 @@ const ContactUs = () => {
                 InputLabelProps={{ style: { color: "#FF3EA5" } }}
                 inputProps={{ style: { color: "white" } }}
               />
-              <Button
-                variant="contained"
-                color="secondary"
-                type="submit"
-                size="small"
-                style={{ display: "block", margin: "0 auto" }}
-              >
-                {loading ? "Sending..." : "Submit"}
-              </Button>
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+              <ReCAPTCHA
+                sitekey="6Ld73J8pAAAAAGQgqrN9gt2FJ5khCIfiZPU1MKsS"
+                onChange={onChange}
+                style={{ display: 'inline-block' }}
+              />
+            </div>
+            <Button
+              variant="contained"
+              color="secondary"
+              type="submit"
+              size="small"
+              style={{ display: "block", margin: "0 auto" }}
+              className={isCaptchaVerified ? "" : "disabled-button"} // Apply a class based on ReCAPTCHA verification status
+              onClick={onSubmit}
+            >
+              {loading ? "Sending..." : "Submit"}
+            </Button>
+
             </form>
           </Box>
         </Container>
