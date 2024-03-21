@@ -10,6 +10,8 @@ import ser5 from "../../assets/ser5.png";
 import ser6 from "../../assets/ser6.png";
 import React, { useState } from "react";
 import Service from "../../components/ServiceCom/ServiceCom";
+import AboutCom from "../../components/AboutCom/AboutCom";
+import ContactCom from "../../components/ContactCom/ContactCom";
 
 const Home = () => {
   const [showDetails, setShowDetails] = useState(false);
@@ -53,7 +55,9 @@ const Home = () => {
         </div>
       </div>
 
-      <Service></Service>
+      <Service />
+      <AboutCom />
+      <ContactCom />
       <footer className="footer">
       <div className="footer-container">
         <p className="footer-text">
