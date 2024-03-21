@@ -35,3 +35,10 @@
     width: 90vw;
   }
 }
+
+.disabled-button {
+  opacity: 0.5;
+  /* Adjust opacity to visually indicate disabled state */
+  pointer-events: none;
+  /* Prevent clicks on the button */
+}
