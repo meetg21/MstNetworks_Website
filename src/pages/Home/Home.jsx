@@ -38,9 +38,9 @@ const Home = () => {
             style={{ margin: "2rem 0", color: "white" }}
           >
             Our comprehensive range of service offerings enables the identification,
-             protection, and management of security vulnerabilities within your
-              critical infrastructure, ensuring the safeguarding of your digital
-               assets and the attainment of your desired cybersecurity objectives.
+            protection, and management of security vulnerabilities within your
+            critical infrastructure, ensuring the safeguarding of your digital
+            assets and the attainment of your desired cybersecurity objectives.
           </p>
           <a href="/about">
           <button type="button" className="custom__button">
